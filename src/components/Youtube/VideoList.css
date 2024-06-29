@@ -1,0 +1,50 @@
+.video-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+.video-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms, transform 500ms;
+}
+.video-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+.video-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.video-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-item h3 {
+    font-size: 1em;
+    margin: 10px 0 0;
+}
+
+.filter-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+}
